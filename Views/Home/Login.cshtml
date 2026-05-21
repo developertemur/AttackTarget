@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<form method="post" action="/home/login2" class="col-md-4">
+    <div class="form-group">
+        <label for="inputUsername" class="form-label">Username:</label>
+        <input type="input" name="username" class="form-control" id="inputUsername">
+    </div>
+    <div class="form-group">
+        <label for="inputPassword" class="form-label">Password:</label>
+        <input type="password" name="password" class="form-control" id="inputPassword">
+    </div>
+    <br />
+    <button class="btn btn-success">Tizimga kirish</button>
+    <br />
+    <span style="color: red;">  @ViewBag.ErrorMessage </span
+</form>
+
